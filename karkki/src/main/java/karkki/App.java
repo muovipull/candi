@@ -12,6 +12,13 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        karkki metrilakumansikkka = new karkki("metrilaku mansikka", "makulaku", "mansikka", "punainen", "pyöreä", "halkasia 7 pituus 1000", 10 , 9, 1, true, listattutulleeki true);
+
+
+
+
+
+
+
     }
 }
