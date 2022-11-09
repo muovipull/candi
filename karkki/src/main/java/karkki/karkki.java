@@ -3,6 +3,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 
+
+
 public class karkki {
     private String nimi;
     private String valmistaja;
@@ -13,6 +15,7 @@ public class karkki {
     private int paino_g;
     private int pituus_mm;
     ArrayList<String> maut;
+    ArrayList<String> värit; 
 	private int pakettejalähetettty;
 	private int pakettejatyllut;
     private int puuttuuu;
@@ -40,14 +43,23 @@ public class karkki {
         this.puuttuuu = puuttuuu;
         this.listattutulleeki = listattutulleeki;
         
-        maut = new ArrayList<String>();
-        maut.add("mansikka");
-        maut.add("omena");
-        maut.add("appelsiini");
-        System.out.println(maut.size());
-        Random noppa = new Random();
-        System.out.println(maut.get( noppa.nextInt(maut.size())));
-        System.out.println(maut);
+        //maut = new ArrayList<String>();
+        //värit = new ArrayList<String>();
+        //maut.add("mansikka");
+        //maut.add("omena");
+        //maut.add("appelsiini");
+        //värit.add("punainen");
+        //värit.add("vihreä");
+        //värit.add("oranssi");
+        
+        
+        //System.out.println(maut.size());
+        //Random noppa = new Random();
+        //System.out.println(maut.get( noppa.nextInt(maut.size())));
+        //System.out.println(värit);
+        //värit.remove(1);
+        //System.out.println(värit);
+        lista();
     }
     public void lyhene()
     {
@@ -63,7 +75,23 @@ public class karkki {
             this.pituus_mm = this.pituus_mm - 250;
         }
     }
+    public void lista()
+    {
+        for (int i = 0; i < värit.size();)
+        {
+            //System.out.println(värit.get(i));
 
+            i++;
+
+
+        }
+
+
+
+
+
+    }
+    
     public void setNimi(String uusinimi)
     {
         this.nimi = uusinimi;
